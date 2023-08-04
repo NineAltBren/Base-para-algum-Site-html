@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 
 <style type="text/css">
   h1 {
@@ -9,7 +9,7 @@
   }
   p {
 	  font-family: Arial, Helvetica, sans-serif;
-	  color: #000;  
+	  color: #000;
 	  font-size: small;
   }
   body {
@@ -38,7 +38,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="HandheldFriendly" content="true" />
 
-  <title>Test Site by Nineteen</title>
+  <title>Clickteam Fusion Developer 2.5+ HTML5 Runtime</title>
 
 	<script>
 	   	// Detection of old browsers that do not support the canvas element
@@ -61,13 +61,13 @@
 	if (window.location.protocol == "file:")
 	{
 		document.write('<div id="bloctxt">');
-		document.write('');
-		document.write('');
-		document.write('');
-		document.write('')
-		document.write('');
+		document.write('<h1>The application cannot be run...</h1>');
+		document.write('<p>HTML browsers do not allow you to launch data files directly from the file system.<br>');
+		document.write('A drag & drop of the html file on a web-browser window will not work, on any machine.<br>');
+		document.write('Please use the Build & Run option (it opens a local web server) to run your application,<br>')
+		document.write('or upload your application folder to a remote web-server, and start it from there...</p>');
 		document.write('</div>');
-		throw new error("");
+		throw new error("Cannot run application");
 	}
 
   </script>
